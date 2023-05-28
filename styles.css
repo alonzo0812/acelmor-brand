@@ -1,0 +1,137 @@
+/* GENERAL STYLES */
+section{
+  margin-bottom: 500px;
+  text-align: center;
+}
+/* HEADER STUFF */
+.header{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+}
+
+.right-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(168, 170, 161), rgb(253, 247, 164));
+  /*background-color: gray;*/
+  border-bottom-left-radius: 500px;
+  border-bottom: black solid 1px;
+  height: 70px;
+}
+
+
+/* MAIN STUFF */
+main{
+  margin-top: 180px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* just remember to center the text divs as well*/
+.main-div{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+  padding: 0;
+}
+.main-div section{
+  width: 100%;
+}
+/*
+INTRODUCTION
+SECTION
+*/
+.introduction-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo-div{
+  height: auto;
+  width: 35%;
+}
+.logo-pic{
+  border-radius: 50%;
+  border: black solid 2px;
+  width: 100%;
+  height: auto;
+}
+.logo-pic:hover {
+  cursor: pointer;
+}
+.intro-line{
+}
+/*
+INFORMATION
+SECTION
+*/
+.info-section{
+  
+}
+/*
+PROJECT
+SECTION
+*/
+.project-section{
+  
+}
+
+.project-container{
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  justify-content: space-around;
+}
+
+.personal-project{
+  background-color: white;
+  border-radius: 10px;
+  border: #333333 solid 1px;
+  box-shadow: 0px 30px 8px 50px rgba(0,0,0, .05), 0 15px 8px 15px rgba(0,0,0,.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 830px;
+  width: 530px;
+}
+
+.personal-project-picture-row{
+  padding: 20px;
+  position: relative;
+}
+
+.personal-project-info-row{
+  padding: 0px 20px 0px 20px;
+}
+.project-img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 10px rgba(0,0,0,.2);
+}
+/*
+REAL WORLD PROJECTS
+SECTION
+*/
+.real-world-section{
+
+}
+/* 
+CLOSING 
+SECTION 
+*/
+.closing-section{
+  
+}
