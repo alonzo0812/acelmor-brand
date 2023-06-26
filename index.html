@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo-pic.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    
     <!-- Add Logo -->
     <title>
       Acelmor
@@ -11,68 +17,101 @@
   </head>
   <body>
     <header class="header">
-      <!--two placeholder divs -->
-      <div></div>
-      <div></div>
-      <div class="right-header">
-        <div class="about-button">About</div>
-        <div class="experience-button">Experience</div>
-        <div class="contact-button">Contact</div>
-        <!-- gawin nating Logo Icon into Resume hover text-->
+      <div>
+        
+        <img id="theme-switcher" src="./images/dlsu-pic.png">
+        <h1>
+          
+          <a href="#Home">JOHN LEOMARC ALONZO</a>
+        </h1>
       </div>
+      <nav class="nav">
+        <a href="#About">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact</a>
+        <a id="nav-theme" href="#Home">:&#41;</a>
+      </nav>
     </header>
     <main>
       <!-- main-->
       <div class="main-div">
-        <section class="introduction-section">
-          <div class="logo-div">
-            <img class="logo-pic" src="images/logo-pic.png" alt="resume">
-          </div>
-          <div class="intro-line">
-            <h2>
-              Hi, I'm Leomarc
-            </h2>
-            <p> 
-              short desc short desc short des
-            </p>
-            <p>
-             Here's my <a href="">resume -></a>
-            </p>
-          </div>
+        <section id="Home"> <!--id bcs padding top, dont want to use !important -->
+          <div id="intro-box">
+            <div class="logo-div">
+              <img id="logo-pic" class="logo-pic" src="./images/logo-pic.png" alt="resume">
+            </div>
+            <div class="intro-line">
+              <h2>
+                Hi, I'm LEOMARC
+              </h2>
+              <p style="padding-right: 80px;"> 
+                I'm a self-taught developer proficient in HTML5, CSS3, JavaScript(ES6+), and React. I am currently learning React Native, SQL, UI/UX Web Design, and other similar skills for web 
+                development.
+                <br>
+                <br> Hint: try clicking my logo on the upper left! :&#41;
+              </p>
+              <p style="padding-right: 5px; text-align: right; margin: 70px 0 0 0;">
+                <a href="" target="_blank"><button>RESUME -></button></a>
+              </p>
+            </div>
+          </div> 
+          
         </section>
-        <section class="info-section">
-          main div for information about me, an short essay general info and then i anchor tag yung highlights of education na nakabullet so like essay and then * * for education pero hover for more info yung dalawa
+        <section id="About" class="info-section">
+          Apologies as this website is built recently and is under construction, the expected date of this website's completion is July 1 2023. 
+          <br>If you wish to know more about me please contact me through email for my information, and I will also gladly show all my projects
         </section>
-        <section class="project-section">
+        <section id="Projects" class="project-section">
           <div class="section-title">
-            <h3>Personal Projects</h3>
+            <h3>Personal Projects (Under Construction, sorry!)</h3>
           </div>
+          
           <div class="project-container">
-            <div class="personal-project"></div>
+            <!--
             <div class="personal-project">
-              <!-- image preview of fighting game, website on click-->
               <div class="personal-project-picture-row">
-                <img class="project-img" src="images/pp-1.jpg">
+                <a href="https://alonzo0812.github.io/ip-address-tracker/" target="_blank">
+                <img class="project-img" src="images/ip-project.png">
+                </a>
               </div>
               <div class="personal-project-info-row">
-                <h4>FIGHTING GAME</h4>
+                <h4>IP address tracker utilizing Geoipify API with JQuery!</h4>
               </div>
             </div>
-            <div class="personal-project"></div>
+          -->
+            <div class="personal-project">
+              <div class="personal-project-picture-row">
+                <a href="https://alonzo0812.github.io/rps-website/" target="_blank">
+                <img class="project-img" src="images/RPS-project.png">
+                </a>
+              </div>
+              <div class="personal-project-info-row">
+                <h4>Responsive RPS website using Vanilla JS & DOM manipulation and CSS Media Queries!</h4>
+              </div>
+            </div>
+            <!--
+            <div class="personal-project">
+              <div class="personal-project-picture-row">
+                <a href="https://alonzo0812.github.io/fighting-game/" target="_blank">
+                <img class="project-img" src="images/fighting-project.png">
+                </a>
+              </div>
+              <div class="personal-project-info-row">
+                <h4>2 Player Fighting game on a website utilizing HTML Canvas</h4>
+              </div>
+            </div>
+          -->
           </div>
         </section>
-        <section class="real-world-section">
-          <div>Real World Projects</div>
-        </section>
-        <section class="closing-section">
-          <div>placeholder div closing section</div>
+        <section id="Contact" class="closing-section">
+          <div>Apologies as this website is built recently and is under construction. 
+            <br>Here is my email:dnobilis@yahoo.com, My contact number is +639186528309. 
+            <br>The expected date of this website's completion is July 1 2023</div>
         </section>
       </div>
       <!--main-->
     </main>
-    <footer>
-
-    </footer>
+    <script src="scripts.js"></script>
   </body>
 
 </html>
